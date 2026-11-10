@@ -13,7 +13,7 @@ xfs_growfs /home
 
 # This is mandatory, nodejs installtion will break SSH if we dont update these packages
 dnf update -y openssl\* openssh\* -y
-yum install java-21-openjdk -y
+sudo dnf install java-21-openjdk-devel -y
 
 dnf module disable nodejs -y
 dnf module enable nodejs:20 -y
